@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculate average marks</h2>
+
+<form action="{{ url_for('form')}}" method="post">
+  <label for="maths">Maths:</label>
+  <input type="text" id="math"
+   name="math" placeholder="Enter Marks"><br><br>
+  
+  <label for="science">Science:</label>
+  <input type="text" id="science" name="science" placeholder="Enter Marks"><br><br> 
+  <label for="english">English:</label>
+  <input type="text" id="english" name="english" placeholder="Enter Marks"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p><b>Your average Marks are: {{score}} <b></p>
+
+</body>
+</html>
+
